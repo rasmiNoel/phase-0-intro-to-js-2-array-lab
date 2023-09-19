@@ -5,9 +5,9 @@
     "passes": 7,
     "pending": 0,
     "failures": 2,
-    "start": "2023-09-18T06:39:40.458Z",
-    "end": "2023-09-18T06:39:40.910Z",
-    "duration": 452
+    "start": "2023-09-19T12:53:17.267Z",
+    "end": "2023-09-19T12:53:17.550Z",
+    "duration": 283
   },
   "tests": [
     {
@@ -41,19 +41,21 @@
     {
       "title": "removes the first cat from the cats array",
       "fullTitle": "index.js Array functions destructivelyRemoveFirstCat() removes the first cat from the cats array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to be an array",
-        "showDiff": false,
-        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected [ undefined, 'Broom' ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]",
+        "showDiff": true,
+        "actual": "[\n  [undefined]\n  \"Broom\"\n]",
+        "expected": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  \"Broom\"\n]",
+        "stack": "AssertionError: expected [ undefined, 'Broom' ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
@@ -62,15 +64,17 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to be an array",
-        "showDiff": false,
-        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected [ undefined, 'Arnold' ] to have the same ordered members as [ Array(4) ]",
+        "showDiff": true,
+        "actual": "[\n  [undefined]\n  \"Arnold\"\n]",
+        "expected": "[\n  \"Arnold\"\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "stack": "AssertionError: expected [ undefined, 'Arnold' ] to have the same ordered members as [ Array(4) ]\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
       "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -87,12 +91,14 @@
     {
       "title": "appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions appendCat(name) appends a cat to the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to be an array",
-        "showDiff": false,
-        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected [ undefined, 'Broom' ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]",
+        "showDiff": true,
+        "actual": "[\n  [undefined]\n  \"Broom\"\n]",
+        "expected": "[\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n  \"Broom\"\n]",
+        "stack": "AssertionError: expected [ undefined, 'Broom' ] to have the same ordered members as [ 'Milo', 'Otis', 'Garfield', 'Broom' ]\n    at Context.<anonymous> (test/indexTest.js:51:52)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
@@ -101,9 +107,11 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected undefined to be an array",
-        "showDiff": false,
-        "stack": "AssertionError: expected undefined to be an array\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "message": "expected [ undefined, 'Arnold' ] to have the same ordered members as [ Array(4) ]",
+        "showDiff": true,
+        "actual": "[\n  [undefined]\n  \"Arnold\"\n]",
+        "expected": "[\n  \"Arnold\"\n  \"Milo\"\n  \"Otis\"\n  \"Garfield\"\n]",
+        "stack": "AssertionError: expected [ undefined, 'Arnold' ] to have the same ordered members as [ Array(4) ]\n    at Context.<anonymous> (test/indexTest.js:59:54)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     }
   ],
@@ -139,14 +147,14 @@
     {
       "title": "removes the first cat from the cats array",
       "fullTitle": "index.js Array functions destructivelyRemoveFirstCat() removes the first cat from the cats array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
       "fullTitle": "index.js Array functions removeLastCat() removes the last cat in the cats array and returns a new array, leaving the cats array unchanged",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
