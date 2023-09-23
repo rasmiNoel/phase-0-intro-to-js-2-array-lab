@@ -16,10 +16,12 @@ function destructivelyRemoveFirstCat() {
     return cats.shift();
 }
 function appendCat() {
-    const cats = [...cats, "Broom"];
+    const catsA = [...cats, "Broom"];
+    return catsA
 }
 function prependCat() {
-    const cats = [...cats, "Arnold"];
+    const catsB = ["Arnold", ...cats];
+    return catsB
 }
 function removeLastCat() {
     return cats.slice(0, 2);
